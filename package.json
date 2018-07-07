@@ -1,0 +1,25 @@
+{
+  "name": "@evanshortiss/orders-service",
+  "version": "0.1.0",
+  "description": "A sample orders service that exposes a RESTful API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "npm run format",
+    "format": "prettier 'lib/**/*.js' index.js --single-quote --write --no-semi"
+  },
+  "author": "Evan Shortiss <evanshortiss@gmail.com> (http://evanshortiss.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.18.3",
+    "env-var": "~3.3.0",
+    "express": "~4.16.3",
+    "pino": "~4.17.3",
+    "rhea": "~0.2.15"
+  },
+  "devDependencies": {
+    "husky": "~0.14.3",
+    "prettier": "~1.13.7"
+  }
+}
