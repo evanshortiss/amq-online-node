@@ -40,5 +40,5 @@ app.listen(PORT, err => {
     throw err
   }
 
-  log.info(`orders service listnening on ${HOST}:${PORT}`)
+  log.info(`orders service listnening on ${PORT}`)
 })
