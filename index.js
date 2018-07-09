@@ -6,7 +6,7 @@ const parser = require('body-parser')
 const log = require('./lib/log')
 const queue = require('./lib/queue')
 
-const HOST = env.get('HOST', '0.0.0.0').asString()
+// const HOST = env.get('HOST', '0.0.0.0').asString()
 const PORT = env.get('PORT', '8080').asIntPositive()
 
 const app = express()
@@ -35,7 +35,7 @@ app.use((err, req, res, next) => {
   })
 })
 
-app.listen(PORT, HOST, err => {
+app.listen(PORT, err => {
   if (err) {
     throw err
   }
